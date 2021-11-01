@@ -18,15 +18,15 @@ public class ChronoUnitsMapper {
     );
 
     private Map<ChronoUnit, Integer> parseDuration(String durationString) {
-        return new ParseStringForDurationByRegexFunction(durationRegexMap)
+        return new MapStringToChronoUnitsFunction(durationRegexMap)
                 .apply(durationString);
     }
 
-    static class ParseStringForDurationByRegexFunction implements Function<String, Map<ChronoUnit, Integer>> {
+    static class MapStringToChronoUnitsFunction implements Function<String, Map<ChronoUnit, Integer>> {
 
         Map<ChronoUnit,String> durationRegexMap = new HashMap<>();
 
-        public ParseStringForDurationByRegexFunction(Map<ChronoUnit,String> durationByRegex) {
+        public MapStringToChronoUnitsFunction(Map<ChronoUnit,String> durationByRegex) {
             durationRegexMap.putAll(durationByRegex);
         }
 
