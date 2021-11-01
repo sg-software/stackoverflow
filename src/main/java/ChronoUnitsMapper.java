@@ -17,7 +17,7 @@ public class ChronoUnitsMapper {
             Map.entry(ChronoUnit.DAYS, "\\d+ (days|day)")
     );
 
-    private Map<ChronoUnit, Integer> parseDuration(String durationString) {
+    public Map<ChronoUnit, Integer> parseDuration(String durationString) {
         return new MapStringToChronoUnitsFunction(durationRegexMap)
                 .apply(durationString);
     }
@@ -43,16 +43,5 @@ public class ChronoUnitsMapper {
                             .map(t -> Map.entry(regex.getKey(),Integer.valueOf(t))))
                     .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
         }
-    }
-
-    public static void main (String args[]) {
-        ChronoUnitsMapper chronoUnitsMapper = new ChronoUnitsMapper();
-
-        Map<ChronoUnit, Integer> durationList = chronoUnitsMapper.parseDuration("1 years, 2 months, 22 days");
-
-        Map<ChronoUnit, Integer> durationList2 = chronoUnitsMapper.parseDuration("2 months, 22 days");
-
-        System.out.println(durationList);
-        System.out.println(durationList2);
     }
 }
