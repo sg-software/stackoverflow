@@ -5,7 +5,11 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class ParseNumbersFromStringAsDuration {
+/**
+ * Showcases a possibility how chrono units can be extracted from a String
+ * with the help of regular expressions registered in a map and a function.
+ */
+public class ChronoUnitsMapper {
 
     private static final Map<ChronoUnit,String> durationRegexMap = Map.ofEntries(
             Map.entry(ChronoUnit.YEARS,"\\d+ (years|year)"),
@@ -42,11 +46,11 @@ public class ParseNumbersFromStringAsDuration {
     }
 
     public static void main (String args[]) {
-        ParseNumbersFromStringAsDuration parseNumbersFromStringAsDuration = new ParseNumbersFromStringAsDuration();
+        ChronoUnitsMapper chronoUnitsMapper = new ChronoUnitsMapper();
 
-        Map<ChronoUnit, Integer> durationList = parseNumbersFromStringAsDuration.parseDuration("1 years, 2 months, 22 days");
+        Map<ChronoUnit, Integer> durationList = chronoUnitsMapper.parseDuration("1 years, 2 months, 22 days");
 
-        Map<ChronoUnit, Integer> durationList2 = parseNumbersFromStringAsDuration.parseDuration("2 months, 22 days");
+        Map<ChronoUnit, Integer> durationList2 = chronoUnitsMapper.parseDuration("2 months, 22 days");
 
         System.out.println(durationList);
         System.out.println(durationList2);

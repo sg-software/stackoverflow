@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09be1292-517c-4b36-be62-e5c329f7eca6" name="Default Changelist" comment="" />
+    <list default="true" id="09be1292-517c-4b36-be62-e5c329f7eca6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/ParseNumbersFromStringAsDuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChronoUnitsMapper.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="209HPLyrvjEeWXxPR0kDGHLzebi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -32,8 +38,8 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RunManager">
-    <configuration name="ParseNumbersFromStringAsDuration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ParseNumbersFromStringAsDuration" />
+    <configuration name="ChronoUnitsMapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChronoUnitsMapper" />
       <module name="Stackoverflow" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -41,7 +47,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParseNumbersFromStringAsDuration" />
+        <item itemvalue="Application.ChronoUnitsMapper" />
       </list>
     </recent_temporary>
   </component>
@@ -63,10 +69,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="613" y="145" width="374" height="570" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1635452031859" />
-    <state x="234" y="0" width="1112" height="855" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1635710197917">
+    <state x="234" y="0" width="1112" height="855" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1635758916039">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="234" y="0" width="1112" height="855" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1635710197917" />
+    <state x="234" y="0" width="1112" height="855" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1600.860@0.0.1600.860" timestamp="1635758916039" />
     <state x="538" y="182" width="524" height="495" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1635452194988">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -128,12 +134,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ParseNumbersFromStringAsDuration.java</url>
+          <url>file://$PROJECT_DIR$/src/ChronoUnitsMapper.java</url>
           <line>51</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ParseNumbersFromStringAsDuration.java</url>
+          <url>file://$PROJECT_DIR$/src/ChronoUnitsMapper.java</url>
           <line>32</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
