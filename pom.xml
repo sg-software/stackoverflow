@@ -28,6 +28,7 @@
     </build>
     <modules>
         <module>chatApp</module>
+        <module>stringToChronoUnit</module>
     </modules>
 
     <properties>
